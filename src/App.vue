@@ -1,13 +1,16 @@
 <template>
-  <PrimeiroComponente/>
+  <Heder/>
+  <Contrato/>
 </template>
 
 <script>
-import PrimeiroComponente from './components/PrimeiroComponente.vue'
+import Heder from './components/Heder.vue'
+import Contrato from './components/Contrato.vue'
   export default {
     name: 'app',
     components: {
-        PrimeiroComponente
+        Heder,
+        Contrato
     }
   }
 </script>
