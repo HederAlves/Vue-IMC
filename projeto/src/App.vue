@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <Heder msg="Mundo"/>
-    <HelloWorld msg="World"/>
-    <img alt="Vue logo" src="./assets/logo.png">
+    <h1></h1>
+    <Heder/>
+    <IMC/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 import Heder from './components/Heder.vue'
+import IMC from './components/IMC.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Heder
+    Heder,
+    IMC
   }
 }
 </script>

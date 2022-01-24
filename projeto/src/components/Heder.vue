@@ -1,16 +1,17 @@
 <template>
-    <div class="Heder">
-        <h1>oi</h1>
-       <h1>{{ msg }}</h1> 
+    <div>
+        <h1>{{ msg }}</h1>
+        <img alt="Vue logo" src="../assets/logo.png">
     </div>
 </template>
 
 <script>
 export default {
     name: 'Heder',
-    props: {
-        msg: String
+    data () {
+        return{
+
+        }
     }
-    
 }
 </script>
