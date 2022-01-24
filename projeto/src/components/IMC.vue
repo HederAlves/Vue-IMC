@@ -1,8 +1,8 @@
 <template>
     <div>
         <h1>Seu Imc é </h1>
-        <h1>{{ oi }}</h1>
-        <h1>{{ m }}</h1>
+        <h1>{{ IMC }}</h1>
+        <h1>{{ nome }}</h1>
     </div>
   
 
@@ -18,8 +18,8 @@ export default {
     name: 'IMC',
     data () {
         return {
-            oi: resultadoIMC,
-            m: nome
+            IMC: resultadoIMC,
+            nome: nome
         }
     }
 }
