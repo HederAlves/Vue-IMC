@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <h1></h1>
-    <Heder/>
+    <img alt="Vue logo" src="./assets/logo.png">
     <IMC/>
   </div>
 </template>
 
 <script>
-import Heder from './components/Heder.vue'
 import IMC from './components/IMC.vue'
 
 export default {
   name: 'App',
   components: {
-    Heder,
     IMC
   }
 }
