@@ -1,6 +1,6 @@
 <template>
     <div>
-        <table class="tabela">
+        <table>
             <thead>
                 <tr>
                     <th>Imc</th>
