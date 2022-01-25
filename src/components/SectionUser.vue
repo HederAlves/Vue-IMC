@@ -13,7 +13,7 @@
                       <input class="peso" v-model="input_peso" type="number">
                     </li>
                 </ul>
-                  <input class="botaoResultado" type="submit" value="Enviar" v-on:click="calculaIMC">
+                  <input class="botaoResultado" type="submit" value="Resultado" v-on:click="calculaIMC">
                   <p class="resultadoImc">{{ resultado }}</p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default {
 <style scoped>
   .blocoPrincipal {
     position: absolute;
-    margin: -500px 0px 0px 925px;
+    margin: -510px 0px 0px 925px;
     width: 220px;
     height: 400px;
     box-sizing: border-box;

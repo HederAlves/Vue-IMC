@@ -50,8 +50,8 @@ export default {
 table {
     font-family: sans-serif;
     text-align: center;
-    width: 50.2%;
-    margin: -230px 150px;
+    width: 50.1%;
+    margin: -228px 150px;
 }
 
 thead {
