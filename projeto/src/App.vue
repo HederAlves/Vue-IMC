@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <h1>{{ titulo }}</h1>
-    <Nome/>
     <Header/>
     <Tabela/>
     <CalculaIMC/>
@@ -15,7 +14,6 @@ import CalculaIMC from './components/CalculaIMC.vue'
 import Header from './components/Header.vue'
 import Tabela from './components/Tabela.vue'
 import SectionUser from './components/SectionUser.vue'
-import Nome from './components/Nome.vue'
 
 export default {
   name: 'App',
@@ -24,7 +22,6 @@ export default {
     Header,
     Tabela,
     SectionUser,
-    Nome
   }
 
 }
