@@ -1,19 +1,34 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <IMC/>
+    <h1>{{ titulo }}</h1>
+    <Nome/>
+    <Header/>
+    <Tabela/>
+    <CalculaIMC/>
+    <SectionUser/>
   </div>
 </template>
 
 <script>
-import IMC from './components/IMC.vue'
+
+import CalculaIMC from './components/CalculaIMC.vue'
+import Header from './components/Header.vue'
+import Tabela from './components/Tabela.vue'
+import SectionUser from './components/SectionUser.vue'
+import Nome from './components/Nome.vue'
 
 export default {
   name: 'App',
   components: {
-    IMC
+    CalculaIMC,
+    Header,
+    Tabela,
+    SectionUser,
+    Nome
   }
+
 }
+
 </script>
 
 <style>
