@@ -1,8 +1,8 @@
 <template>
     <section>
-          <div class="blocoPrincipal">
-            <div class="blocoInput">
-                <button class="novoTeste" onclick="window.location.reload();">Novo Teste</button>
+          <div>
+            <div>
+                <button onclick="window.location.reload();">Novo Teste</button>
                 <ul>
                     <li>
                     <h2>Altura (ex.:1,70)</h2>
@@ -15,7 +15,7 @@
                       <input v-model="peso" type="number">
                     </li>
                 </ul>
-                <button class="botaoResultado" v-on:click="CalculaIMC()">Resultado</button>
+                <button v-on:click="CalculaIMC()">Resultado</button>
                 <p v-bind="resutadoIMC"></p>
             </div>
         </div>
