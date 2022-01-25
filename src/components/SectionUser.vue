@@ -2,6 +2,7 @@
     <section>
           <div class="blocoPrincipal">
             <div class="blocoInput">
+            <button class="novoTeste" onclick="window.location.reload();">Novo Teste</button>
                 <ul>
                     <li>
                     <h2>Altura (ex.:1,70)</h2>
@@ -58,6 +59,23 @@ export default {
     padding: 8px 15px;
     align-items: right;
     color: hsl(255,95%,95%);
+}
+
+.novoTeste {
+    margin: 15px 17px;
+    text-align: center;
+    background: hsl(255,60%,60%);
+    color:hsl(255,95%,95%);
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.novoTeste:hover {
+    background: hsl(255,95%,95%);
+    color:hsl(255,60%,60%);
 }
 
 .blocoInput {
