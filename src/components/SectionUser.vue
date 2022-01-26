@@ -42,6 +42,7 @@ export default {
 
       e.preventDefault();
       this.resultado = resultado.toFixed(2);
+      //emitir um evento e passar o resultado como parâmetro.
     }
   }
 }
@@ -62,7 +63,7 @@ export default {
 }
 
 .novoTeste {
-    margin: 15px 17px;
+    margin: 15px 0px 0px 20px;
     text-align: center;
     background: hsl(255,60%,60%);
     color:hsl(255,95%,95%);
@@ -83,10 +84,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 520px;
+    height: 630px;
     border-radius: 15px;
     background: black;
-    margin-top: 260px;
+    margin-top: 150px;
 }
 
 .peso,
