@@ -3,7 +3,7 @@
     <h1>{{ titulo }}</h1>
     <Header/>
     <Tabela :list="listaDeTarefas" />
-
+  <button @click="filtro(resultado)">iuyegueydgeyh</button>
      <!-- evento.SectionUser<button @click='filtro'>Teste</button>-->
     <SectionUser/>
     <!-- pegar o evento SectionUser e disparar uma função(filtro) parâmetro resultado. -->
@@ -49,7 +49,7 @@ export default {
   components: {
     Header,
     Tabela,
-    SectionUser,
+    SectionUser
   },
 
   data () {
@@ -62,13 +62,13 @@ export default {
     //resultado
     filtro() {
       const novaLista = this.listaDeTarefas.filter((tarefa) => {
-         if (tarefa.obesidade > 40) {
+         if (tarefa.obesidade == 0) {
             return true
          } else {
            return false
          }
        })
-       this.listaDeTarefas = novaLista
+      this.listaDeTarefas = novaLista
     }
   }
 }
