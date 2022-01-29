@@ -43,6 +43,8 @@ export default {
       e.preventDefault();
       this.resultado = resultado.toFixed(2);
       //emitir um evento e passar o resultado como parâmetro.
+      this.filtro(resultado)
+
     }
   }
 }
