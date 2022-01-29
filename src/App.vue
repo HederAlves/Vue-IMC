@@ -3,7 +3,7 @@
     <h1>{{ titulo }}</h1>
     <Header/>
     <Tabela :list="listaDeTarefas" />
-  <button @click="filtro(resultado)">iuyegueydgeyh</button>
+  <button @click="filtro()">iuyegueydgeyh</button>
      <!-- evento.SectionUser<button @click='filtro'>Teste</button>-->
     <SectionUser/>
     <!-- pegar o evento SectionUser e disparar uma função(filtro) parâmetro resultado. -->
