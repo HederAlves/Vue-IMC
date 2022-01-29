@@ -27,7 +27,7 @@ export default {
         list: Array
     },
     mounted: function() {
-        console.log(this.list)
+        console.log(this.list[2])
     }
 }
 </script>
