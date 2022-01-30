@@ -87,10 +87,10 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 630px;
+    height: 600px;
     border-radius: 15px;
     background: black;
-    margin-top: 150px;
+    margin-top: 140px;
 }
 
 .peso,
