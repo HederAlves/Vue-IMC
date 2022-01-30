@@ -64,7 +64,7 @@ export default {
     filtro() {
       console.log(this.resultado)
       const novaLista = this.listaDeTarefas.filter(() => {
-         if (this.resultado >= -1) {
+         if (this.resultado >= 18) {
             return true
          } else {
            return false
@@ -80,7 +80,7 @@ export default {
   #app {
     margin: 0 auto;
     background: hsl(255,60%,60%);
-    padding: 60px 0px 0px 0px;
-    height: 607px;
+    padding: 50px 0px 0px 0px;
+    height: 585px;
 }
 </style>
