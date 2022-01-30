@@ -13,7 +13,7 @@
                       <input class="peso" v-model="input_peso" type="number">
                     </li>
                 </ul>
-                  <input class="botaoResultado" type="submit" value="Resultado" v-on:click="calculaIMC">
+                  <input class="botaoResultado" type="button" value="Resultado" v-on:click="calculaIMC">
                   <p class="resultadoImc">{{ resultado }}</p>
             </div>
           </div>
@@ -29,22 +29,23 @@ export default {
     return {
       input_altura: "",
       input_peso: "",
-      resultado: ""
+      resultado: "",
     }
   },
+
+  props: ["estado"],
+
   methods: {
     
-    calculaIMC(e) {
+    calculaIMC() {
 
       var altura = Number(this.input_altura)
       var peso = Number(this.input_peso)
       var resultado = peso / (altura * altura)
-
-      e.preventDefault();
       this.resultado = resultado.toFixed(2);
+      this.estado.resultado = resultado.toFixed(2);
       //emitir um evento e passar o resultado como parâmetro.
-      this.filtro(resultado)
-
+      
     }
   }
 }
