@@ -5,7 +5,7 @@
     <Tabela :list="listaDeTarefas" />
   <button @click="filtro()">iuyegueydgeyh</button>
      <!-- evento.SectionUser<button @click='filtro'>Teste</button>-->
-    <SectionUser/>
+    <SectionUser :estado="this"/>
     <!-- pegar o evento SectionUser e disparar uma função(filtro) parâmetro resultado. -->
   </div>
 </template>
@@ -55,20 +55,22 @@ export default {
   data () {
     
     return{
-      listaDeTarefas: list
+      listaDeTarefas: list,
+      resultado:""
     }
   },
   methods: {
     //resultado
     filtro() {
-      const novaLista = this.listaDeTarefas.filter((tarefa) => {
-         if (tarefa.obesidade == 0) {
+      console.log(this.resultado)
+      const novaLista = this.listaDeTarefas.filter(() => {
+         if (this.resultado >= -1) {
             return true
          } else {
            return false
          }
        })
-      this.listaDeTarefas = novaLista
+      this.listaDeTarefas = novaLista.splice(3,1)
     }
   }
 }
