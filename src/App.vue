@@ -70,8 +70,8 @@ export default {
            return false
          }
        })
-      this.listaDeTarefas = novaLista.splice(0,1)
-    }
+       this.listaDeTarefas = novaLista.splice(0,1)
+    } 
   }
 }
 </script>
