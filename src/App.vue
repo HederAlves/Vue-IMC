@@ -65,12 +65,14 @@ export default {
       console.log(this.resultado)
       const novaLista = this.listaDeTarefas.filter(() => {
          if (this.resultado < 18.5) {
-            return true
+            return this.listaDeTarefas = novaLista.splice(0,1)
+
          } else {
-           return false
+           return this.listaDeTarefas = novaLista.splice(4,1)
          }
        })
        this.listaDeTarefas = novaLista.splice(0,1)
+       
     } 
   }
 }
