@@ -3,7 +3,7 @@
     <h1>{{ titulo }}</h1>
     <Header/>
     <Tabela :list="listaDeTarefas" />
-  <button @click="filtro()">iuyegueydgeyh</button>
+  <button @click="filtro()">Filtro</button>
      <!-- evento.SectionUser<button @click='filtro'>Teste</button>-->
     <SectionUser :estado="this"/>
     <!-- pegar o evento SectionUser e disparar uma função(filtro) parâmetro resultado. -->
@@ -64,13 +64,13 @@ export default {
     filtro() {
       console.log(this.resultado)
       const novaLista = this.listaDeTarefas.filter(() => {
-         if (this.resultado >= 18) {
+         if (this.resultado < 18.5) {
             return true
          } else {
            return false
          }
        })
-      this.listaDeTarefas = novaLista.splice(3,1)
+      this.listaDeTarefas = novaLista.splice(0,1)
     }
   }
 }
