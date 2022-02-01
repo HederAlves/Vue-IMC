@@ -55,9 +55,9 @@ export default {
 <style scoped>
   .blocoPrincipal {
     position: absolute;
-    margin: -510px 0px 0px 925px;
+    margin: -480px 0px 0px 925px;
     width: 220px;
-    height: 400px;
+    height: 410px;
     box-sizing: border-box;
     border-radius: 15px;
     padding: 8px 15px;
